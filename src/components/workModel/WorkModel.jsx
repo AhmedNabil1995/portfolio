@@ -29,10 +29,6 @@ const WorkModel = ({setShowModel,index=0}) => {
                         <span className='item_value'>{project.technologies}</span>
                     </div>
                     <div className='project_details_item'>
-                        <span className='item_key'>GitHub:</span>
-                        <a href={project.github} target='_blank' className='item_value'>{project.github}</a>
-                    </div>
-                    <div className='project_details_item'>
                         <span className='item_key'>live Demo:</span>
                         <a href={project.url} target='_blank' className='item_value'>{project.url}</a>
                     </div>
