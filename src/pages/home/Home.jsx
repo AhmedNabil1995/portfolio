@@ -18,7 +18,7 @@ const Home = () => {
         let character =  myWork[i].split('');
         if(!timer.current){
             timer.current = setInterval(()=>{
-                if(j<character.length-1){
+                if(j<character.length){
                     work += character[j];
                     setWork(work)
                     j++;
