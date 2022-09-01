@@ -70,6 +70,12 @@ border-top: 15px solid var(--main-color);
     margin-bottom: 20px;
 }
 
+@media screen and (max-width:600) {
+    .home .content .i-do{
+        font-size: 20px;
+    }
+}
+
 .home .content .description{
     font-weight: lighter;
     line-height: 1.6;

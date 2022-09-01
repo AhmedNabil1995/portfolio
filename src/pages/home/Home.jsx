@@ -5,7 +5,7 @@ import { useState } from 'react';
 const Home = () => {
     let [work,setWork] = useState('');
     let timer = useRef();
-    const myWork = ['WEB DEVELOPMENT','MOBILE DEVELPOMENT','UI/UX DESIGN']
+    const myWork = ['WEB DEVELOPER','REACT DEVELOPER','ANGULAR DEVELOPER']
     useEffect(()=>{       
             typeWork(0);
     },[])
@@ -49,7 +49,7 @@ const Home = () => {
                     <div className='content'>
                         <p className='hello'>HELLO</p>
                         <h1>I'M <span>Ahmed Nabil</span></h1>
-                        <div className='i-do'>I DO {work}|</div>
+                        <div className='i-do'>I'M {work}|</div>
                         <p className='description'>I am a graduate of the Information Technology Institute, and I have a strong knowledge of web 
     development using JavaScript technology, and through my experience in the construction field, I 
     gained the skills of teamwork and time management.
