@@ -86,7 +86,8 @@
     }
     .work_model .wrapper{
         overflow: hidden;
-        margin-top: 50px;
+        margin-top: 90px;
+        width: 100%;
     }
 }
 .close{
