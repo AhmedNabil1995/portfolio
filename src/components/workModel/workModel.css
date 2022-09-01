@@ -79,7 +79,7 @@
     }
     .work_model .project_details_item .item_value{
         font-size: 15px;
-        word-wrap: break-word;
+        word-wrap: break-all;
     }
     .project_details_item{
         overflow: hidden;
