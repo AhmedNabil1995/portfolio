@@ -14,6 +14,7 @@
 
 .work_model .wrapper{
     width: 80%;
+    margin: auto;
     background-color: var(--secondry-background-color);
     padding: 20px;
     border-radius: 5px;
@@ -78,11 +79,12 @@
     .work_model .project_details_item .item_value{
         font-size: 15px;
         word-wrap: break-word;
-
+    }
+    .project_details_item{
+        overflow: hidden;
     }
     .work_model .wrapper{
         margin-top: 90px;
-        overflow: hidden;
     }
 }
 .close{
