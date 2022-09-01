@@ -1,5 +1,4 @@
 import './home.css'
-import myImage from '../../assets/myImage.jpg';
 import { useEffect, useRef } from 'react';
 import { useState } from 'react';
 const Home = () => {
@@ -41,7 +40,7 @@ const Home = () => {
             <div className='row rgap-4'>
                 <div className='col-md-6'>
                     <div className='img-container'>
-                        <img src={myImage} alt='Ahmed Nabil' className='avatar'/>
+                        <img src={window.location.origin+'/assets/myImage.jpg'} alt='Ahmed Nabil' className='avatar'/>
                     </div>
                 </div>
                 <div className='col-md-6'>
