@@ -1,6 +1,7 @@
 import './home.css'
 import { useEffect, useRef } from 'react';
 import { useState } from 'react';
+import Working from '../../components/working/Working';
 const Home = () => {
     let [work,setWork] = useState('');
     let timer = useRef();
@@ -34,8 +35,11 @@ const Home = () => {
         },250)
         }
     }
+    let [display,setDispaly] = useState(true);
+
   return (
     <div className='home'>
+        {display&&<Working setDispaly={setDispaly}/>}
         <div className='container'>
             <div className='row rgap-4'>
                 <div className='col-md-6'>
