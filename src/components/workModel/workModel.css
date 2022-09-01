@@ -59,6 +59,7 @@
 
 .work_model .project_details_item{
     margin: 10px 0;
+    overflow-x: hidden;
 }
 .work_model .project_details_item .item_key{
     color: rgb(134,154,196);
@@ -81,11 +82,7 @@
         font-size: 15px;
         word-wrap: break-all;
     }
-    .project_details_item{
-        overflow: hidden;
-    }
     .work_model .wrapper{
-        overflow: hidden;
         margin-top: 90px;
         width: 100%;
     }
