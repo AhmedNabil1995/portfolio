@@ -29,7 +29,9 @@ const Home = () => {
                         typeWork(0);
                     }else{
                         arrIndex++;
+                       setTimeout(() => {
                         typeWork(arrIndex);
+                       }, 500);
                     }
                 }
         },250)
