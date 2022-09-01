@@ -5,7 +5,7 @@ const Working = ({setDispaly}) => {
     <div className='working'>
         <div className='wrapper'>
         <div className='close' onClick={()=>setDispaly(false)}>X</div>
-        <span>still workimg on it</span>
+        <span>still working on it</span>
         </div>
     </div>
   )
