@@ -80,6 +80,10 @@
         word-wrap: break-word;
 
     }
+    .work_model .wrapper{
+        margin-top: 90px;
+        overflow: hidden;
+    }
 }
 .close{
     position: absolute;
