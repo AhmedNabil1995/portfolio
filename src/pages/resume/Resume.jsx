@@ -12,7 +12,7 @@ const Resume = () => {
         <div className='container'>
             <h1>MY <span>Resume</span></h1>
             <div className='resume_model'>
-                <button className='btn btn-primary-outline'>download my CV</button>
+                <button className='btn btn-primary-outline'><a href={`${window.location.origin}/assets/Ahmed Nabil Kamal CV.pdf`} download='Ahmed_Nabil_Kamal_CV'>download my CV</a></button>
             </div>
             <div className='row cgap-4'>
                 <div className='col-md-6'>

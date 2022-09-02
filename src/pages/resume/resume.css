@@ -19,3 +19,7 @@
     background-color: var(--secondry-background-color);
     margin-bottom: 30px;
 }
+.resume a{
+    text-decoration: none;
+    color: inherit;
+}

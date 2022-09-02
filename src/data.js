@@ -7,7 +7,17 @@ export default [
         github: 'https://github.com/AhmedNabil1995/foodyadmin',
         url : 'https://foody-admin.herokuapp.com/home',
         img: 'home.png',
-        category: 'react'
+        category: ['react']
+    },
+    {
+        projectName: 'foody',
+        description: 'It’s an awsome food E-commerce website',
+        client: 'Ahmed Nabil',
+        technologies : 'React,Matrial UI,Node,Stripe...',
+        github: 'https://github.com/AhmedNabil1995/Iti-graduation-project-front',
+        url : 'https://foodyap.herokuapp.com/Home',
+        img: 'foody.png',
+        category: ['react','e-commerce']
     },
 ]
 

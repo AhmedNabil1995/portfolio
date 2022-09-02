@@ -1,7 +1,8 @@
-import React from 'react'
+import './work.css'
 
-const Work = ({setShowModel,project}) => {
-    function openModel(){
+const Work = ({setShowModel,project,setItem}) => {
+    function openModel(i){
+      setItem(project)
         setShowModel(true)
     }
   return (
@@ -9,7 +10,7 @@ const Work = ({setShowModel,project}) => {
         <img className='avatar' src={`${window.location.origin}/assets/${project.img}`} alt=''/>
         <div className='portfolio_work_descritpion'>
             <p className='title'>{project.projectName}</p>
-            <p className='cat'>{project.category}</p>
+            <p className='cat'>{project.category[0]}</p>
         </div>
     </div>
   )
