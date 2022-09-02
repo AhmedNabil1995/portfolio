@@ -1,0 +1,39 @@
+.history_item{
+    margin: 40px 0;
+    border-left: 2px solid rgb(139,157,197);
+    padding: 5px;
+    padding-left: 20px;
+    position: relative;
+    overflow: visible;
+}
+.history_item .start,.history_item .end{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    left: -8.5px;
+    position: absolute;
+    background-color: white;
+    border: 2px solid var(--main-color);
+}
+.history_item .start{
+    top: -10px;
+}
+
+.history_item .end{
+    bottom: -10px;
+}
+
+.history_item .title{
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.history_item .job_time{
+    color: rgb(139,157,197);
+    margin-bottom: 10px;
+}
+
+.history_item .description{
+    line-height: 1.5;
+}

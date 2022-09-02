@@ -33,6 +33,7 @@ const Menu = () => {
         <div className='menu_items' style={{display}}>
             <ul ref={links}>
                 <li onClick={handleActiveLink}  className='active'><Link to={'/'}>Home</Link></li>
+                <li onClick={handleActiveLink}><Link to={'/resume'}>Resume</Link></li>
                 <li onClick={handleActiveLink}><Link to={'/portfolio'}>Portfolio</Link></li>
             </ul>
         </div>

@@ -1,0 +1,23 @@
+.skill{
+    margin: 20px 0;
+}
+
+.skill_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.skill .progress_bar{
+    height: 15px;
+    border-radius: 5px;
+    width: 100%;
+    background-color: rgb(69,77,113);
+}
+
+.skill .progress_bar_percentage{
+    height: 100%;
+    width: 0%;
+    background-color: var(--main-color);
+}

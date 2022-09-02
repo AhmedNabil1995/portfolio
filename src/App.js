@@ -5,6 +5,7 @@ import Home from './pages/home/Home';
 import Portfolio from './pages/portfolio/Portfolio';
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Working from './components/working/Working';
+import Resume from './pages/resume/Resume';
 
 function App() {
   let [display,setDispaly] = useState(true);
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/portfolio' element={<Portfolio />}/>
+        <Route path='/resume' element={<Resume />}/>
       </Routes>
       </BrowserRouter>
     </div>

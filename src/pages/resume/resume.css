@@ -1,0 +1,21 @@
+.resume{
+    width: 100%;
+}
+
+.resume h1{
+    font-size: 45px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 90px 0 40px 0;
+}
+
+.resume h1 span{
+    color: var(--main-color);
+}
+
+.resume_model{
+    padding: 40px;
+    border-radius: 10px;
+    background-color: var(--secondry-background-color);
+    margin-bottom: 30px;
+}
