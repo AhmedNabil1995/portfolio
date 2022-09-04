@@ -6,6 +6,7 @@ import Portfolio from './pages/portfolio/Portfolio';
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Working from './components/working/Working';
 import Resume from './pages/resume/Resume';
+import Contact from './pages/contact/Contact';
 
 function App() {
   let [display,setDispaly] = useState(true);
@@ -19,6 +20,7 @@ function App() {
         <Route path='/' element={<Home />}/>
         <Route path='/portfolio' element={<Portfolio />}/>
         <Route path='/resume' element={<Resume />}/>
+        <Route path='/contact' element={<Contact />}/>
       </Routes>
       </BrowserRouter>
     </div>

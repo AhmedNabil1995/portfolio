@@ -1,0 +1,29 @@
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    background-color: var(--secondry-background-color);
+    padding: 30px 20px;
+    border-radius: 10px;
+    width: 92%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.contact-info i{
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(40,54,90);
+    color: var(--main-color);
+}
+
+.contact-info p{
+    font-size: 15px;
+    color: rgb(112,143,187);
+}

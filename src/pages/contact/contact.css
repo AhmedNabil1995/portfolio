@@ -1,0 +1,15 @@
+.contact{
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.contact h1{
+    font-size: 45px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 90px 0 40px 0;
+}
+
+.contact h1 span{
+    color: var(--main-color);
+}

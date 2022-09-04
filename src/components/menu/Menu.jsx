@@ -35,6 +35,7 @@ const Menu = () => {
                 <li onClick={handleActiveLink}  className='active'><Link to={'/'}>Home</Link></li>
                 <li onClick={handleActiveLink}><Link to={'/resume'}>Resume</Link></li>
                 <li onClick={handleActiveLink}><Link to={'/portfolio'}>Portfolio</Link></li>
+                <li onClick={handleActiveLink}><Link to={'/contact'}>Contact</Link></li>
             </ul>
         </div>
     </div>

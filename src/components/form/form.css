@@ -1,0 +1,30 @@
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgb(37,44,72);
+    border-radius: 12px;
+}
+
+form input,textarea{
+    background-color: transparent;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(55,61,87);
+    color: white;
+    font-size: 16px;
+}
+
+form input:focus,textarea:focus{
+    border-bottom: 1px solid var(--main-color);
+}
+
+form ::placeholder{
+    color: rgb(142,151,175);
+}
+
+textarea{
+    height: 100px;
+}
