@@ -11,7 +11,7 @@ const Resume = () => {
     <div className='resume'>
         <div className='container'>
             <h1>MY <span>Resume</span></h1>
-            <div className='resume_model'>
+            <div className='resume_model btn-container'>
                 <button className='btn btn-primary-outline'><a href={`${window.location.origin}/assets/Ahmed Nabil Kamal CV.pdf`} download='Ahmed_Nabil_Kamal_CV'>download my CV</a></button>
             </div>
             <div className='row cgap-4'>

@@ -2,6 +2,11 @@
     width: 100%;
 }
 
+.resume .btn-container{
+    width: calc(100% - 55px);
+    text-align: center;
+}
+
 .resume h1{
     font-size: 45px;
     text-transform: uppercase;

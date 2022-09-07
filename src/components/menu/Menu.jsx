@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './menu.css'
 
 const Menu = () => {
@@ -13,16 +13,7 @@ const Menu = () => {
         }
     }
 
-    function handleActiveLink(e){
-        Array.from(links.current.children).forEach((link)=>{
-            if(link.firstChild==e.target){
-                link.classList.add('active');
-                console.log('yes')
-            }else{
-                link.classList.remove('active');
-            }
-        })
-    }
+    
   return (
     <div className='menu'>
         <div className={`${display==='none'?'menu_btn':'menu_btn close'}`} onClick={handleDisplay}>
@@ -32,10 +23,10 @@ const Menu = () => {
         </div>
         <div className='menu_items' style={{display}}>
             <ul ref={links}>
-                <li onClick={handleActiveLink}  className='active'><Link to={'/'}>Home</Link></li>
-                <li onClick={handleActiveLink}><Link to={'/resume'}>Resume</Link></li>
-                <li onClick={handleActiveLink}><Link to={'/portfolio'}>Portfolio</Link></li>
-                <li onClick={handleActiveLink}><Link to={'/contact'}>Contact</Link></li>
+                <li><NavLink to={'/'}>Home</NavLink></li>
+                <li><NavLink to={'/resume'}>Resume</NavLink></li>
+                <li><NavLink to={'/portfolio'}>Portfolio</NavLink></li>
+                <li><NavLink to={'/contact'}>Contact</NavLink></li>
             </ul>
         </div>
     </div>

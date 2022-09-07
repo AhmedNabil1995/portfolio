@@ -76,7 +76,7 @@
     font-weight: 600;
     color: white;
 }
-.menu_items li.active a{
+.menu_items li a.active{
     color: var(--main-color);
 }
 
