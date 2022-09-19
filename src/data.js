@@ -11,13 +11,23 @@ export default [
     },
     {
         projectName: 'foody',
-        description: 'It’s an awsome food E-commerce website',
+        description: `t is a Full-Stack website with a dashboard designed by React framework and it's libraries if I want to describe this website in one statement it will be "cook your own" it consists of many meals from around the world you can choose any of them, know what ingredients you need to cook them, and follow step-by-step Instructions to make them you can also buy the ingredients if you don't have for each meal, and pay it with cash or an online payment method`,
         client: 'Ahmed Nabil',
         technologies : 'React,Matrial UI,Node,Stripe...',
         github: 'https://github.com/AhmedNabil1995/Iti-graduation-project-front',
         url : 'https://foodyap.herokuapp.com/Home',
         img: 'foody.png',
         category: ['react','e-commerce']
+    },
+    {
+        projectName: 'memories',
+        description: `It’s a simple social media website where you can share your memories with other friends`,
+        client: 'Ahmed Nabil',
+        technologies : 'React,Node js, mongoDB,FireBase...',
+        github: 'https://github.com/AhmedNabil1995/memories',
+        url : '',
+        img: 'memories.png',
+        category: ['react','social']
     },
 ]
 
