@@ -29,6 +29,116 @@ export default [
         img: 'memories.png',
         category: ['react','social']
     },
+    {
+        projectName: 'Part Of Speach',
+        description: `this is an app for english students to help them categorized words according to their syntactic functions, which is known as "Part of Speech".`,
+        client: 'Ahmed Nabil',
+        technologies : 'React js',
+        github: 'https://github.com/AhmedNabil1995/part_of_speach',
+        url : '',
+        img: 'quesion-app.png',
+        category: ['react','games']
+    },
+    {
+        projectName: 'tick tack toe',
+        description: `this is a tick tack toe game.`,
+        client: 'Ahmed Nabil',
+        technologies : 'javascript',
+        github: 'https://github.com/AhmedNabil1995/tick-tack-toe',
+        url : '',
+        img: 'tick-tack-toe.png',
+        category: ['javascript','games']
+    },
+    {
+        projectName: 'Translator',
+        description: `this is a translator app look like google translator.`,
+        client: 'Ahmed Nabil',
+        technologies : 'javascript',
+        github: 'https://github.com/AhmedNabil1995/translator',
+        url : '',
+        img: 'translator.png',
+        category: ['javascript']
+    },
+    {
+        projectName: 'artBoard',
+        description: `this is an artBoard app`,
+        client: 'Ahmed Nabil',
+        technologies : 'javascript,SVG',
+        github: 'https://github.com/AhmedNabil1995/art-board',
+        url : '',
+        img: 'artBoard.png',
+        category: ['javascript','games']
+    },
+    {
+        projectName: 'Canvas Game',
+        description: `this is a car game`,
+        client: 'Ahmed Nabil',
+        technologies : 'javascript, Canvas',
+        github: 'https://github.com/AhmedNabil1995/canvas-game',
+        url : '',
+        img: 'canvas-game.png',
+        category: ['javascript','games']
+    },
+    {
+        projectName: 'travel adviser',
+        description: `this is a travel adviser app`,
+        client: 'Ahmed Nabil',
+        technologies : 'react, API',
+        github: 'https://github.com/AhmedNabil1995/travel-adviser',
+        url : '',
+        img: 'travel-adviser.png',
+        category: ['react']
+    },
+    {
+        projectName: 'music player',
+        description: `this is a music player app`,
+        client: 'Ahmed Nabil',
+        technologies : 'Javascript',
+        github: 'https://github.com/AhmedNabil1995/music-player',
+        url : '',
+        img: 'music-player.png',
+        category: ['Javascript']
+    },
+    {
+        projectName: 'lama E-Commerce',
+        description: `it is a simple e-commerce website with the main features`,
+        client: 'Ahmed Nabil',
+        technologies : 'React,Node Js,mongoDB',
+        github: 'https://github.com/AhmedNabil1995/lama',
+        url : '',
+        img: 'lama.png',
+        category: ['react','e-commerce']
+    },
+    {
+        projectName: 'Template 1',
+        description: `html css website`,
+        client: 'Ahmed Nabil',
+        technologies : '',
+        github: 'https://github.com/AhmedNabil1995/template1',
+        url : '',
+        img: 'template1.png',
+        category: ['html/css']
+    },
+    {
+        projectName: 'Template 2',
+        description: `html css website`,
+        client: 'Ahmed Nabil',
+        technologies : '',
+        github: 'https://github.com/AhmedNabil1995/template2',
+        url : '',
+        img: 'template2.png',
+        category: ['html/css']
+    },
+    {
+        projectName: 'Template 3',
+        description: `html css website`,
+        client: 'Ahmed Nabil',
+        technologies : '',
+        github: 'https://github.com/AhmedNabil1995/template3',
+        url : '',
+        img: 'template3.png',
+        category: ['html/css']
+    },
 ]
 
 export const lanquagesSkills = [
