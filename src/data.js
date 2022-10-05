@@ -7,7 +7,7 @@ export default [
         github: 'https://github.com/AhmedNabil1995/foodyadmin',
         url : 'https://foody-admin.herokuapp.com/home',
         img: 'home.png',
-        category: ['react']
+        category: ['react','dashboard']
     },
     {
         projectName: 'foody',
@@ -27,7 +27,7 @@ export default [
         github: 'https://github.com/AhmedNabil1995/memories',
         url : '',
         img: 'memories.png',
-        category: ['react','social']
+        category: ['react','socialMedia']
     },
     {
         projectName: 'Part Of Speach',
@@ -97,7 +97,7 @@ export default [
         github: 'https://github.com/AhmedNabil1995/music-player',
         url : '',
         img: 'music-player.png',
-        category: ['Javascript']
+        category: ['javascript']
     },
     {
         projectName: 'lama E-Commerce',

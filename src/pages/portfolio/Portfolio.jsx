@@ -22,8 +22,19 @@ const Portfolio = () => {
             filterFun(1)
         }else if(e.target==btnContainer.current.children[2]){
             filterFun(2)
+        }else if(e.target==btnContainer.current.children[3]){
+            filterFun(3)
+        }else if(e.target==btnContainer.current.children[4]){
+            filterFun(4)
+        }else if(e.target==btnContainer.current.children[5]){
+            filterFun(5)
+        }else if(e.target==btnContainer.current.children[6]){
+            filterFun(6)
+        }else if(e.target==btnContainer.current.children[7]){
+            filterFun(7)
         }
     } 
+
     const filterFun =(i)=>{
         if(i===0){
             setFilterData(data);
@@ -37,7 +48,33 @@ const Portfolio = () => {
                 return el.category.includes('javascript')
             })
             setFilterData(filterData);
+        }else if(i===3){
+            filterData = data.filter((el)=>{
+                return el.category.includes('html/css')
+            })
+            setFilterData(filterData);
+        }else if(i===4){
+            filterData = data.filter((el)=>{
+                return el.category.includes('games')
+            })
+            setFilterData(filterData);
+        }else if(i===5){
+            filterData = data.filter((el)=>{
+                return el.category.includes('react')
+            })
+            setFilterData(filterData);
+        }else if(i===6){
+            filterData = data.filter((el)=>{
+                return el.category.includes('dashboard')
+            })
+            setFilterData(filterData);
+        }else if(i===7){
+            filterData = data.filter((el)=>{
+                return el.category.includes('socailMedia')
+            })
+            setFilterData(filterData);
         }
+
     }
   return (
     <>
@@ -49,6 +86,12 @@ const Portfolio = () => {
             <button onClick={handleClick} className='btn btn-primary-outline active'>All</button>
             <button onClick={handleClick} className='btn btn-primary-outline'>E-Commerce websites</button>
             <button onClick={handleClick} className='btn btn-primary-outline'>javaScript Project</button>
+            <button onClick={handleClick} className='btn btn-primary-outline'>HTML/CSS</button>
+            <button onClick={handleClick} className='btn btn-primary-outline'>Games</button>
+            <button onClick={handleClick} className='btn btn-primary-outline'>React Js</button>
+            <button onClick={handleClick} className='btn btn-primary-outline'>Dashboard</button>
+            <button onClick={handleClick} className='btn btn-primary-outline'>Socail Media</button>
+
         </div>
             <div className='row rgap-4'>
                     {filterData.map((el)=>(
