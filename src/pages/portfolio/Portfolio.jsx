@@ -70,7 +70,7 @@ const Portfolio = () => {
             setFilterData(filterData);
         }else if(i===7){
             filterData = data.filter((el)=>{
-                return el.category.includes('socailMedia')
+                return el.category.includes('socialMedia')
             })
             setFilterData(filterData);
         }

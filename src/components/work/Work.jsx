@@ -10,7 +10,7 @@ const Work = ({setShowModel,project,setItem}) => {
         <img className='avatar' src={`${window.location.origin}/assets/${project.img}`} alt=''/>
         <div className='portfolio_work_descritpion'>
             <p className='title'>{project.projectName}</p>
-            <p className='cat'>{project.category[0]}</p>
+            <p className='cat'>{project.category.toString()}</p>
         </div>
     </div>
   )
