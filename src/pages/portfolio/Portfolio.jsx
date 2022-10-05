@@ -28,12 +28,12 @@ const Portfolio = () => {
         if(i===0){
             setFilterData(data);
         }else if(i===1){
-            filterData = filterData.filter((el)=>{
+            filterData = data.filter((el)=>{
                 return el.category.includes('e-commerce')
             })
             setFilterData(filterData);
         }else if(i===2){
-            filterData = filterData.filter((el)=>{
+            filterData = data.filter((el)=>{
                 return el.category.includes('javascript')
             })
             setFilterData(filterData);
