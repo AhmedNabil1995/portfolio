@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     z-index: 5;
     padding: 90px 0 20px 0;
@@ -39,6 +40,11 @@
 .work_model .img_container{
     border-radius: 5px;
     overflow: hidden;
+}
+
+.work_model .img_container img{
+    max-height: 300px;
+    object-fit: contain;
 }
 
 .work_model .content{

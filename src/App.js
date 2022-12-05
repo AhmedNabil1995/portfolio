@@ -9,7 +9,7 @@ import Resume from './pages/resume/Resume';
 import Contact from './pages/contact/Contact';
 
 function App() {
-  let [display,setDispaly] = useState(true);
+  let [display,setDispaly] = useState(false);
 
   return (
     <div className="App">
@@ -17,8 +17,8 @@ function App() {
       <Menu />
       {display&&<Working setDispaly={setDispaly}/>}
       <Routes>
-        <Route path='/' element={<Home />}/>
-        <Route path='/portfolio' element={<Portfolio />}/>
+        <Route path='/portfolio' element={<Home />}/>
+        <Route path='/myworks' element={<Portfolio />}/>
         <Route path='/resume' element={<Resume />}/>
         <Route path='/contact' element={<Contact />}/>
       </Routes>

@@ -12,7 +12,7 @@ const WorkModel = ({setShowModel,item}) => {
             <div className='row rgap-4'>
                 <div className='col-md-6'>
                 <div className='img_container'>
-                    <img className='avatar' src={`${window.location.origin}/assets/${item.img}`} alt=''/>
+                    <img className='avatar' src={`${window.location.origin}/portfolio/assets/${item.img}`} alt=''/>
                 </div>
                 </div>
                 <div className='col-md-6'>

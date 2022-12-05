@@ -44,7 +44,7 @@ const Home = () => {
             <div className='row rgap-4'>
                 <div className='col-md-6'>
                     <div className='img-container'>
-                        <img src={window.location.origin+'/assets/myImage.jpg'} alt='Ahmed Nabil' className='avatar'/>
+                        <img src={window.location.origin+'/portfolio/assets/myImage.jpg'} alt='Ahmed Nabil' className='avatar'/>
                     </div>
                 </div>
                 <div className='col-md-6'>

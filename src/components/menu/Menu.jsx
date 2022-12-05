@@ -23,9 +23,10 @@ const Menu = () => {
         </div>
         <div className='menu_items' style={{display}}>
             <ul ref={links}>
-                <li><NavLink to={'/'}>Home</NavLink></li>
+                
+                <li><NavLink to={'/portfolio'}>Home</NavLink></li>
                 <li><NavLink to={'/resume'}>Resume</NavLink></li>
-                <li><NavLink to={'/portfolio'}>Portfolio</NavLink></li>
+                <li><NavLink to={'/myworks'}>Portfolio</NavLink></li>
                 <li><NavLink to={'/contact'}>Contact</NavLink></li>
             </ul>
         </div>
