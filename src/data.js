@@ -5,7 +5,7 @@ export default [
         client: 'Ahmed Nabil',
         technologies : 'React,Node,mongoDB,socket.IO...',
         github: 'https://github.com/AhmedNabil1995/foodyadmin',
-        url : 'https://foody-admin.herokuapp.com/home',
+        url : 'https://ahmednabil1995.github.io/foody-admin/',
         img: 'home.png',
         category: ['react','dashboard']
     },
@@ -14,8 +14,8 @@ export default [
         description: `t is a Full-Stack website with a dashboard designed by React framework and it's libraries if I want to describe this website in one statement it will be "cook your own" it consists of many meals from around the world you can choose any of them, know what ingredients you need to cook them, and follow step-by-step Instructions to make them you can also buy the ingredients if you don't have for each meal, and pay it with cash or an online payment method`,
         client: 'Ahmed Nabil',
         technologies : 'React,Matrial UI,Node,Stripe...',
-        github: 'https://github.com/AhmedNabil1995/Iti-graduation-project-front',
-        url : 'https://foodyap.herokuapp.com/Home',
+        github: 'https://github.com/AhmedNabil1995/foody',
+        url : 'https://ahmednabil1995.github.io/foody/',
         img: 'foody.png',
         category: ['react','e-commerce']
     },
