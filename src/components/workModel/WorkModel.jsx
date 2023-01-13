@@ -1,11 +1,14 @@
 import './workModel.css'
-import data from '../../data';
-import { useState } from 'react';
+import {modelVariant } from '../../animation/animation';
+import { motion } from 'framer-motion';
 const WorkModel = ({setShowModel,item}) => {
 
   return (
     <div className='work_model'>
-        <div className='wrapper'>
+        <motion.div className='wrapper' variants={modelVariant} 
+    initial='initial'
+    animate='animate'
+    exit='exit'>
             <div className='close' onClick={()=>setShowModel(false)}>X</div>
             <h1 className='model_title'>{item.projectName}</h1>
             <hr />
@@ -39,7 +42,7 @@ const WorkModel = ({setShowModel,item}) => {
                 </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     </div>
   )
 }

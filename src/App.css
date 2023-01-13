@@ -5,3 +5,7 @@
     --text-white :rgb(255,255,255);
     --main-color : rgb(70,120,232);
 }
+
+body{
+    overflow-x: hidden;
+}

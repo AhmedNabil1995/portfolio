@@ -3,6 +3,8 @@ import WorkModel from '../../components/workModel/WorkModel';
 import { useRef, useState } from 'react';
 import Work from '../../components/work/Work';
 import data from '../../data';
+import { AnimatePresence, motion } from 'framer-motion';
+import { childrenVariant, headerVariant, parentNoAnimate, ParentVarient } from '../../animation/animation';
 const Portfolio = () => {
     let [showModel,setShowModel] = useState(false);
     let [filterData,setFilterData] = useState(data);
@@ -78,11 +80,24 @@ const Portfolio = () => {
     }
   return (
     <>
-    {showModel&&<WorkModel item={item} setShowModel={setShowModel}/>}
-    <div className='portfolio'>
-        <div className='container'>
-        <h1>My <span>portfolio</span></h1>
-        <div className='portfolio_tab' ref={btnContainer}>
+    <AnimatePresence>
+    {showModel&&<WorkModel 
+     item={item} setShowModel={setShowModel}/>}
+    </AnimatePresence>
+    <motion.div className='portfolio' variants={ParentVarient}
+    initial='intial'
+    animate='animate'
+    exit='exit'>
+        <motion.div className='container' variants={parentNoAnimate}
+            initial='initial'
+            animate='animate'>
+        <motion.h1 variants={headerVariant} 
+            initial='initial' 
+            animate='animate'>My <span>portfolio</span></motion.h1>
+        <motion.div className='portfolio_tab' ref={btnContainer}
+        variants={childrenVariant}
+        initial='initial' 
+        animate='animate'>
             <button onClick={handleClick} className='btn btn-primary-outline active'>All</button>
             <button onClick={handleClick} className='btn btn-primary-outline'>E-Commerce websites</button>
             <button onClick={handleClick} className='btn btn-primary-outline'>javaScript Project</button>
@@ -92,17 +107,26 @@ const Portfolio = () => {
             <button onClick={handleClick} className='btn btn-primary-outline'>Dashboard</button>
             <button onClick={handleClick} className='btn btn-primary-outline'>Socail Media</button>
 
-        </div>
-            <div className='row rgap-4'>
+        </motion.div>
+            <motion.div className='row rgap-4' layout variants={childrenVariant}
+            initial='initial' 
+            animate='animate'>
+                <AnimatePresence>
                     {filterData.map((el)=>(
-                        <div className='col-l-4 col-s-6' key={el.projectName}>
+                        <motion.div layout
+                        initial={{opacity:0,scale:0}}
+                        animate={{opacity:1,scale:1}}
+                        exit={{opacity:0,scale:0}}
+                        transition={{duration:0.8}}
+                         className='col-l-4 col-s-6' key={el.projectName}>
                         <Work project={el} setItem={setItem} setShowModel={setShowModel}/>
-                        </div>
+                        </motion.div>
                     )
                     )}
-            </div>
-        </div>
-    </div>
+                    </AnimatePresence>
+            </motion.div>
+        </motion.div>
+    </motion.div>
     </>
   )
 }

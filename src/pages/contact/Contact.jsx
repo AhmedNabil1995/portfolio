@@ -1,8 +1,9 @@
+import { childrenVariant, headerVariant, parentNoAnimate, ParentVarient } from '../../animation/animation';
 import ContactInfo from '../../components/contactInfo/ContactInfo';
 import Form from '../../components/form/Form';
 import Map from '../../components/map/Map';
 import './contact.css';
-
+import { motion } from 'framer-motion';
 const Contact = () => {
     let contactInfon = [
         {
@@ -24,26 +25,31 @@ const Contact = () => {
         
     ]
   return (
-    <div className='contact'>
-      <div className='container'>
-        <h1>Contact <span>Me</span></h1>
-        <div className='row'>
+    <motion.div className='contact' variants={ParentVarient}
+    initial='intial'
+    animate='animate'
+    exit='exit'>
+      <motion.div className='container' variants={parentNoAnimate}
+        initial='initial' 
+        animate='animate'>
+        <motion.h1 variants={headerVariant}>Contact <span>Me</span></motion.h1>
+        <motion.div className='row' variants={childrenVariant}>
             {contactInfon.map((contact,i)=>(
                 <div className='col-l-4 col-md-6' key={i}>
                     <ContactInfo contact={contact}/>
                 </div>
             ))}
-        </div>
-        <div className='row rgap-4'>
-                <div className='col-md-6'>
+        </motion.div>
+        <motion.div className='row rgap-4' variants={childrenVariant}>
+                <div className='col-md-6' >
                     <Form />
                 </div>
-                <div className='col-md-6'>
+                <div className='col-md-6' >
                     <Map />
                 </div>
-            </div>
-      </div>
-    </div>
+            </motion.div>
+      </motion.div>
+    </motion.div>
   )
 }
 

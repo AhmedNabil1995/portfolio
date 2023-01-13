@@ -1,7 +1,8 @@
 import './home.css'
 import { useEffect, useRef } from 'react';
 import { useState } from 'react';
-
+import { motion } from "framer-motion";
+import {imgVariant,contentVariant,ParentVarient} from '../../animation/animation';
 const Home = () => {
     let [work,setWork] = useState('');
     let timer = useRef();
@@ -39,16 +40,22 @@ const Home = () => {
     }
 
   return (
-    <div className='home'>
+    <motion.div className='home'
+    variants={ParentVarient}
+    initial='initial'
+    animate='animate'
+    exit='exit'>
         <div className='container'>
             <div className='row rgap-4'>
                 <div className='col-md-6'>
-                    <div className='img-container'>
+                    <motion.div className='img-container'
+                    variants={imgVariant}>
                         <img src={window.location.origin+'/portfolio/assets/myImage.jpg'} alt='Ahmed Nabil' className='avatar'/>
-                    </div>
+                    </motion.div>
                 </div>
                 <div className='col-md-6'>
-                    <div className='content'>
+                    <motion.div className='content'
+                    variants={contentVariant}>
                         <p className='hello'>HELLO</p>
                         <h1>I'M <span>Ahmed Nabil</span></h1>
                         <div className='i-do'>I'M {work}|</div>
@@ -56,11 +63,11 @@ const Home = () => {
     development using JavaScript technology, and through my experience in the construction field, I 
     gained the skills of teamwork and time management.
     Seeking a challenging and rewarding position whereby I can apply and develop my skills, build a long-term growing career, and improve my experience in the software field.</p>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </div>
-    </div>
+    </motion.div>
   )
 }
 
